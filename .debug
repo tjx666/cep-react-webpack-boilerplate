@@ -1,0 +1,8 @@
+<ExtensionList>
+    <Extension Id="org.ytj.dev.boilerplate.panel">
+        <HostList>
+            <Host Name="PHSP" Port="9999" />
+            <Host Name="PHXS" Port="9999" />
+        </HostList>
+    </Extension>
+</ExtensionList>    

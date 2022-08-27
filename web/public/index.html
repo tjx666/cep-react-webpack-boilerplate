@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>CEP React Webpack Boilerplate</title>
+    </head>
+    <body oncontextmenu="return false;">
+        <div id="root"></div>
+        <script src="js/main.js" async></script>
+        <script async>
+            (function () {
+                const fs = require('fs');
+                const path = require('path');
+
+                window.__loadExtendScriptStart = Date.now();
+                window.__loadExtendScriptPromise = new Promise((resolve, reject) => {
+                    const indexJsx = path.resolve(__dirname, './JSX/index.jsx');
+                    const indexJsxbin = path.resolve(__dirname, './JSX/index.jsxbin');
+                    const indexScriptPath = (
+                        fs.existsSync(indexJsx) ? indexJsx : indexJsxbin
+                    ).replace(/\\/g, '\\\\');
+                    const evalScript = window.__adobe_cep__.evalScript;
+
+                    try {
+                        evalScript(
+                            `$.appEncoding = "UTF-8";$.evalFile('${indexScriptPath}');`,
+                            (result) => {
+                                resolve(result);
+                            },
+                        );
+                    } catch (error) {
+                        reject(error);
+                    }
+                });
+            })();
+        </script>
+    </body>
+</html>

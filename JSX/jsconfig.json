@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "None",
+        "rootDir": ".",
+        "noLib": true,
+        "types": []
+    },
+    "include": [
+        "./**/*.jsx",
+        "./**/*.d.ts",
+        "../node_modules/types-for-adobe/Photoshop/2015.5/index.d.ts",
+        "../node_modules/types-for-adobe/shared/**/*.d.ts"
+    ]
+}

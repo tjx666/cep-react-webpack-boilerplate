@@ -1,0 +1,50 @@
+{
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/build": true,
+        "**/logs": true,
+        "**/*.lock": true,
+        "**/assets": true,
+        "**/tools": true,
+        "**/pnpm-lock.yaml": true,
+        "**/docs/**.h": true
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.husky": true
+    },
+    "xml.fileAssociations": [
+        {
+            "pattern": "CSXS/manifest.xml",
+            "systemId": "https://raw.githubusercontent.com/Adobe-CEP/CEP-Resources/master/CEP_7.x/ExtensionManifest_v_7_0.xsd"
+        }
+    ],
+    "vsicons.associations.files": [{ "extensions": ["jsx"], "icon": "js", "format": "svg" }],
+    "files.associations": {
+        "**/JSX/**/*.jsx": "javascript",
+        "**/playground/**/*.jsx": "javascript",
+        ".debug": "xml",
+        "**/Desktop/ScriptingListenerJS.log": "javascript"
+    },
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "gitlens.remotes": [
+        {
+            "name": "origin",
+            "type": "GitHub",
+            "domain": "git.gaoding.com",
+            "protocol": "https"
+        }
+    ],
+    "[javascript][typescript][typescriptreact][json][jsonc][html][css][less][markdown][xml][yaml][svg]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "path-autocomplete.pathMappings": {
+        "assets/": "${folder}/web/assets/"
+    },
+    "logViewer.watch": [
+        {
+            "title": "dev-browser-node-jsx-mixed",
+            "pattern": "~/Library/Application Support/Adobe/CEP/extensions/cep-react-webpack-boilerplate/logs/browser_node_jsx_mixed.log"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "$.writeln()": {
+        "scope": "javascript",
+        "prefix": "wl",
+        "body": "$.writeln($0);",
+        "description": "ExtendScript output to stdout"
+    },
+    "create module": {
+        "scope": "javascript",
+        "prefix": "psm",
+        "body": ["api.$1 = (function () {", "\t$0", "})();\n"]
+    },
+    "create new validator": {
+        "scope": "javascript",
+        "prefix": "newvalidator",
+        "body": [
+            "/** @type {Validator} */",
+            "var $1 = {",
+            "\tname: '$2',",
+            "\ttitle: '$3',",
+            "\tisGlobal: ${4:false},",
+            "\tdefaultLevel: '${5:error}',",
+            "\tdefaultOptions: { $6 },",
+            "\tvalidate: function (ctx, options) {",
+            "\t\t\t$0",
+            "\t},",
+            "};"
+        ]
+    },
+    "create new optimizer": {
+        "scope": "javascript",
+        "prefix": "newoptimizer",
+        "body": [
+            "/** @type {Optimizer} */",
+            "var $1 = {",
+            "\tname: '$2',",
+            "\ttitle: '$3',",
+            "\tdefaultEnable: '${4:on}',",
+            "\tdefaultOptions: { $5 },",
+            "\toptimize: function (ctx, options) {",
+            "\t\t\t$0",
+            "\t},",
+            "};"
+        ]
+    }
+}

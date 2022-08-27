@@ -1,0 +1,26 @@
+{
+    "extends": [
+        "stylelint-config-standard",
+        "stylelint-config-prettier",
+        "stylelint-config-recess-order"
+    ],
+    "plugins": ["stylelint-declaration-block-no-ignored-properties"],
+    "customSyntax": "postcss-less",
+    "rules": {
+        "alpha-value-notation": null,
+        "color-function-notation": null,
+        "comment-empty-line-before": null,
+        "declaration-block-no-redundant-longhand-properties": null,
+        "declaration-empty-line-before": null,
+        "font-family-no-missing-generic-family-keyword": null,
+        "function-name-case": "lower",
+        "no-descending-specificity": null,
+        "no-invalid-double-slash-comments": null,
+        "number-max-precision": null,
+        "property-no-vendor-prefix": null,
+        "selector-class-pattern": null,
+        "value-keyword-case": null,
+        "value-no-vendor-prefix": null
+    },
+    "ignoreFiles": ["**/node_modules/**"]
+}

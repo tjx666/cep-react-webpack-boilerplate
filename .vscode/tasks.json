@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "npm",
+            "script": "start",
+            "label": "npm: start",
+            "detail": "cross-env NODE_ENV=development ts-node --files -P ./scripts/tsconfig.json ./scripts/start.ts",
+            "isBackground": true,
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
