@@ -27,14 +27,6 @@
         "**/Desktop/ScriptingListenerJS.log": "javascript"
     },
     "typescript.tsdk": "node_modules/typescript/lib",
-    "gitlens.remotes": [
-        {
-            "name": "origin",
-            "type": "GitHub",
-            "domain": "git.gaoding.com",
-            "protocol": "https"
-        }
-    ],
     "[javascript][typescript][typescriptreact][json][jsonc][html][css][less][markdown][xml][yaml][svg]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },

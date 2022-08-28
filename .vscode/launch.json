@@ -14,14 +14,6 @@
             "hiddenTypes": ["Function", "builtin"]
         },
         {
-            "name": "Export",
-            "type": "extendscript-debug",
-            "request": "launch",
-            "hostAppSpecifier": "photoshop",
-            "script": "${workspaceFolder}/playground/jsx/export.jsx",
-            "hiddenTypes": ["Function", "builtin"]
-        },
-        {
             "name": "Attach Debug",
             "type": "extendscript-debug",
             "request": "attach",
