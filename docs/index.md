@@ -18,7 +18,7 @@ hero:
 
 features:
   - title: Popular frontEnd technology stack
-    details: React + TypeScript + Webpack + Less + ESLint + Stylelint + Prettier + LintStaged + FormatImports + Babel
+    details: React + Redux + TypeScript + Webpack + Less + ESLint + Stylelint + Prettier + LintStaged + FormatImports + Babel
   - title: Excellent code development experience
     details: Optimized vscode settings and lots of builtin framework like communication, logging
   - title: Production ready level
