@@ -8,7 +8,7 @@ module.exports = (api) => {
         '@babel/env',
         {
             modules: false,
-            targets: 'Chrome > 61.0.3163.91',
+            targets: 'Chrome >= 61.0.3163.91',
             bugfixes: true,
             useBuiltIns: 'usage',
             corejs: { version: packageJSON.devDependencies['core-js'].replace('^', '') },
