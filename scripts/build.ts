@@ -18,7 +18,7 @@ import { getCostString, getSizeStr, pLimit } from './utils';
 function bundleWeb(spinner: Ora) {
     const start = Date.now();
 
-    const message = 'Webpack 打包 web 代码';
+    const message = 'Webpack bundle web code';
     spinner.start(message);
 
     const compiler = webpack(prodConfig);
@@ -50,7 +50,7 @@ function bundleWeb(spinner: Ora) {
 async function copyFiles(spinner: Ora) {
     const start = Date.now();
 
-    const message = '拷贝文件到 build 文件夹';
+    const message = 'copy files to build folder';
     spinner.start(message);
 
     const patterns = [
@@ -81,7 +81,7 @@ async function cleanEmptyFiles(spinner: Ora) {
     return new Promise((resolve, reject) => {
         const start = Date.now();
 
-        const message = '删除空文件夹';
+        const message = 'clean empty folders';
         spinner.start();
 
         glob(BUILD_DIR + '/**/*', async (err, paths) => {
@@ -111,7 +111,7 @@ async function cleanEmptyFiles(spinner: Ora) {
 async function updateFiles(spinner: Ora) {
     const start = Date.now();
 
-    const message = '更新包名，版本号，端口号，开发模式等内容';
+    const message = 'update extension name，version，port, dev mode etc';
     spinner.start(message);
 
     const manifestPath = resolvePath(BUILD_DIR, './CSXS/manifest.xml');
@@ -186,7 +186,7 @@ async function main() {
             await jsxToJsxbin(spinner);
         }
 
-        console.log(`构建插件 v${packageJSON.version} 成功！总耗时：${getCostString(start)}`);
+        console.log(`build v${packageJSON.version} success！costs：${getCostString(start)}`);
     }
 }
 

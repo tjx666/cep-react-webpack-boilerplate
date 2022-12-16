@@ -1,12 +1,12 @@
 (function setup() {
-    // 开启 debug 模式
+    // enable debug mode
     $.level = 2;
-    // 开启严格模式禁止对对象只读属性进行写操作
+    // forbid to write to readonly property
     $.strict = true;
 
-    // 设置 JSX engin 内存缓存 300MB
+    // set JSX engin cache 300MB
     var MAX_MEMORY_CACHE_SIZE = 1024 * 1024 * 300;
-    // 默认是 100k
+    // default size is 100k
     if ($.memCache < MAX_MEMORY_CACHE_SIZE) {
         $.memCache = MAX_MEMORY_CACHE_SIZE;
     }
@@ -60,7 +60,7 @@
         // business logic
 
     } catch(error) {
-        alert('启动插件失败！\n' + $.global.api.exception.getErrorDetails(error));
+        alert('load JSX modules failed！\n' + $.global.api.exception.getErrorDetails(error));
     }
 
     if (__PROD__) {
