@@ -22,5 +22,5 @@
         "value-keyword-case": null,
         "value-no-vendor-prefix": null
     },
-    "ignoreFiles": ["**/node_modules/**"]
+    "ignoreFiles": ["**/node_modules/**", "**/*.html"]
 }
